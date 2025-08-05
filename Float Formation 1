@@ -1,0 +1,16 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        float num=s.nextFloat();
+        int num1=(int)Math.round(num);
+        System.out.printf("%f\n",num);
+        System.out.printf("%.4f\n",num);
+        System.out.printf("%.2f\n",num);
+        System.out.printf("%d",num1);
+    }
+}
