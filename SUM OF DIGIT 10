@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int num = s.nextInt();
+        int sum = 0;
+        if(num>=100){
+             do {
+                int even= num % 10;
+                sum=sum+even;
+                num=num/10;
+            } while (num != 0);
+            System.out.println("Sum of digit is " + sum);
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
