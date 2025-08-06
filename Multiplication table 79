@@ -11,8 +11,8 @@ public class Solution {
         int n=s.nextInt();
         if(n>=1 && n<=9){
             for(int i=1;i<=n;i++){
-                int res=i*5;
-                System.out.printf("5 x %d = %d\n",i,res);
+                int res=i*n;
+                System.out.printf("%d x %d = %d\n",n,i,res);
             }
         }
         else{
