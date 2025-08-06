@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        if(n>=1 && n<=9){
+            for(int i=1;i<=n;i++){
+                int res=i*5;
+                System.out.printf("5 x %d = %d\n",i,res);
+            }
+        }
+        else{
+            System.out.println("Invalid Input");
+        }
+    }
+}
