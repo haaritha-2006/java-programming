@@ -1,0 +1,35 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        if(n>0 && n<100000){
+            System.out.println(arm(n));
+        }
+        else{
+            System.out.println("Invaild Input");
+        }
+    }
+    static String arm(int n){
+        int a=n;
+        int sum=0;
+        int len=String.valueOf(a).length();
+        while(a>0){
+        int rem=a%10;
+        sum+=(int)Math.pow(rem,len);
+        a=a/10;
+        }
+        if(sum==n){
+            return "yes"; 
+        }
+        else{
+            return "no"; 
+        }
+    }
+}
